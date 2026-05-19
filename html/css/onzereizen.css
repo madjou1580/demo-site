@@ -1,0 +1,191 @@
+/* ==================
+    ACTIVITIES SECTION
+=================== */
+.activities-section h2, .section-header h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1D242E;
+}
+
+.activities-grid {
+    display: grid; /* Activeert CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 gelijke kolommen */
+    grid-auto-rows: 200px; /* Automatische hoogte van elke rij */
+    gap: 20px; /* Ruimte tussen de grid-items */
+}
+
+.activity-card {
+    position: relative; /* Nodig voor absolute positionering van kinderen */
+    border-radius: 18px; /* Afgeronde hoeken */
+    overflow: hidden; /* Verbergt inhoud buiten de kaart */
+    cursor: pointer; /* Verandert de cursor bij hover */
+}
+
+.activity-card img {
+    width: 100%; /* Volledige breedte van de kaart */
+    height: 100%; /* Volledige hoogte van de kaart */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding de kaart vult zonder vervorming */
+    transition: transform 0.5s ease; /* Soepele overgang voor hover-effect */
+}
+
+.activity-card::after {
+    content: ""; /* Vereist voor pseudo-elementen */
+    position: absolute; /* Absolute positionering binnen de kaart */
+    inset: 0; /* Bedekt de volledige kaart */
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.1)
+    );
+
+}
+
+.activity-card span {
+    position: absolute;
+    bottom: 16px;
+    left: 18px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.activity-card:hover img {
+    transform: scale(1.08); /* Zoomt in op de afbeelding bij hover */
+}
+
+/* ===== CARD SIZES ===== */
+.large {
+    grid-row: span 2; /* Neemt 2 rijen in beslag */
+}
+
+.wide {
+    grid-column: span 2; /* Neemt 2 kolommen in beslag */
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolommen in plaats van 4 */
+        grid-auto-rows: 220px; /* iets hogere rijen voor betere layout */
+        gap: 16px; /* iets minder ruimte tussen kaarten */
+    }
+
+    .large {
+        grid-column: span 2; /* Neemt 2 kolommen in beslag */
+        grid-row: span 1; /* Neemt 1 rij in beslag */
+    }
+}
+
+@media (max-width: 480px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 220px;
+    }
+
+    .wide,
+    .large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+/* ==================
+    CARDS GRID
+=================== */
+
+/* ===== GRID ===== */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* ===== CARD ===== */
+.card {
+    position: relative;
+    height: 300px;
+    border-radius: 18px;
+    overflow: hidden;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.2)
+    );
+}
+
+.card-content {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    right: 18px;
+    z-index: 2;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.85;
+    margin: 6px 0 14px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    background: #8fe0c2;
+    color: #000;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 even brede kolommen */
+    }
+}
+
+@media (max-width: 480px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

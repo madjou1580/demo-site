@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reistips</title>
+    <link rel="stylesheet" href="css/opmaak.css">
+    <link rel="stylesheet" href="css/reistips.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="bg-white shadow-md fixed top-0 w-full z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+            <!-- Hamburger (mobile) -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Logo + Naam -->
+            <div class="flex items-center font-bold -ml-4">
+                <img src="images/logo.png" alt="Logo" class="h-16 w-auto">
+                <span class="hidden md:inline text-xl font-extrabold text-blue-700">
+                    Travel<span class="text-sky-400">X</span>perience
+                </span>
+            </div>
+    
+            <!-- Menu desktop -->
+            <div id="menu" class="hidden md:flex space-x-6 text-gray-800">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="onzereizen.html" class="hover:text-blue-600">Onze reizen</a>
+                <a href="fotogallerij.html" class="hover:text-blue-600">Fotogallerij</a>
+                <a href="reistips.html" class="hover:text-blue-600">Reistips</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    
+        <!-- Mobiel menu -->
+        <div id="mobile-menu" class="fixed top-0 left-0 h-full w-72 bg-white shadow-xl
+                    transform -translate-x-full transition-transform duration-300 ease-in-out
+                    md:hidden z-50">
+            <!-- Header -->
+            <div class="p-4 flex justify-end">
+                <button id="close-menu" class="text-3xl text-gray-600 hover:text-black transition">
+                    &times;
+                </button>
+            </div>
+    
+            <!-- Navigatie mobiel -->
+            <div class="px-6 py-4 space-y-4 text-lg font-medium text-gray-800">
+                <a href="index.html" class="block hover:text-blue-600">Home</a>
+                <a href="onzereizen.html" class="block hover:text-blue-600">Onze reizen</a>
+                <a href="fotogallerij.html" class="block hover:text-blue-600">Fotogallerij</a>
+                <a href="reistips.html" class="block hover:text-blue-600">Reistips</a>
+                <a href="contact.html" class="block hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="reistips-main">
+        <h1>Reistips</h1>
+    
+        <div class="tips-container">
+    
+            <div class="tip tip1">
+                <h2><i class="fas fa-plane-departure"></i> Vliegen</h2>
+                <p>Vergelijk altijd vliegtickets en boek op tijd om de beste prijzen te krijgen.</p>
+            </div>
+    
+            <div class="tip tip2">
+                <h2><i class="fas fa-sun"></i> Warme landen</h2>
+                <p>Controleer het klimaat en het regenseizoen voor je een warme bestemming kiest.</p>
+            </div>
+    
+            <div class="tip tip3">
+                <h2><i class="fas fa-syringe"></i> Vaccinaties</h2>
+                <p>Informeer bij je huisarts of het tropisch instituut welke vaccinaties nodig zijn.</p>
+            </div>
+    
+            <div class="tip tip4">
+                <h2><i class="fas fa-map-marked-alt"></i> Mooie trips</h2>
+                <p>Plan ook daguitstappen en ontdek plekken buiten de toeristische zones.</p>
+            </div>
+    
+            <div class="tip tip5">
+                <h2><i class="fas fa-star"></i> Aan te raden bestemmingen</h2>
+                <p>Lees reviews en ervaringen van andere reizigers voor inspiratie.</p>
+            </div>
+    
+            <div class="tip tip6">
+                <h2><i class="fas fa-suitcase-rolling"></i> Bagage</h2>
+                <p>Reis licht en neem alleen het nodige mee voor meer comfort onderweg.</p>
+            </div>
+    
+    
+        </div>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Logo" >
+                <span class="brand-name">TravelXperience</span>
+            </div>
+            <nav class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="onzereizen.html">Onze reizen</a>
+                <a href="fotogallerij.html">Fotogallerij</a>
+                <a href="reistips.html">Reistips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-contact">
+                <div><i class="fas fa-map-marker-alt"></i> Gent, België</div>
+                <div><i class="fas fa-phone"></i> +32 493 88 13 23</div>
+                <div><i class="fas fa-envelope"></i> bahthiernomadjou20@gmail.com</div>
+                <div><i class="fas fa-clock"></i> Ma – Vr: 09:00 – 17:00</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 TravelXperience. All rights reserved.</span>
+        </div>
+    </footer>
+    
+    <script src="js/nav.js"></script>
+</body>
+</html>

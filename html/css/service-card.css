@@ -1,0 +1,90 @@
+/* ==================
+    SERVICE CARDS 
+=================== */
+.home-main .services {
+    display: grid; /* Grid-layout voor de dienstenkaarten */
+
+    /* Automatisch aantal kolommen:
+       - minimum 250px per kaart
+       - maximum 1fr (neemt beschikbare ruimte in) */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    
+    gap: 25px; /* Ruimte tussen de kaarten */
+}
+
+.onzereizen-main {
+    padding: 100px 5% 60px;
+}
+
+.onzereizen-main .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card button {
+    width: fit-content;
+    padding: 10px 16px;
+    margin: 0 auto 15px auto;
+    display: block;
+    background: #354DF0;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.service-card button:hover {
+    background: #005fcc;
+}
+
+.service-info {
+    padding: 15px;
+}
+
+.service-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.service-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 400px) {
+    .service-card img {
+        height: 150px;
+    }
+}
+
+/* === TABLET (401px - 960px) === */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .service-card img {
+        height: 170px;
+    }
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onze reizen</title>
+    <link rel="stylesheet" href="css/opmaak.css">
+    <link rel="stylesheet" href="css/service-card.css">
+    <link rel="stylesheet" href="css/onzereizen.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js"></script>
+</head>
+<body>
+
+    <nav class="bg-white shadow-md fixed top-0 w-full z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+            <!-- Hamburger (mobile) -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Logo + Naam -->
+            <div class="flex items-center font-bold -ml-4">
+                <img src="images/logo.png" alt="Logo" class="h-16 w-auto">
+                <span class="hidden md:inline text-xl font-extrabold text-blue-700">
+                    Travel<span class="text-sky-400">X</span>perience
+                </span>
+            </div>
+    
+            <!-- Menu desktop -->
+            <div id="menu" class="hidden md:flex space-x-6 text-gray-800">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="onzereizen.html" class="hover:text-blue-600">Onze reizen</a>
+                <a href="fotogallerij.html" class="hover:text-blue-600">Fotogallerij</a>
+                <a href="reistips.html" class="hover:text-blue-600">Reistips</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    
+        <!-- Mobiel menu -->
+        <div id="mobile-menu" class="fixed top-0 left-0 h-full w-72 bg-white shadow-xl
+                    transform -translate-x-full transition-transform duration-300 ease-in-out
+                    md:hidden z-50">
+            <!-- Header -->
+            <div class="p-4 flex justify-end">
+                <button id="close-menu" class="text-3xl text-gray-600 hover:text-black transition">
+                    &times;
+                </button>
+            </div>
+    
+            <!-- Navigatie mobiel -->
+            <div class="px-6 py-4 space-y-4 text-lg font-medium text-gray-800">
+                <a href="index.html" class="block hover:text-blue-600">Home</a>
+                <a href="onzereizen.html" class="block hover:text-blue-600">Onze reizen</a>
+                <a href="fotogallerij.html" class="block hover:text-blue-600">Fotogallerij</a>
+                <a href="reistips.html" class="block hover:text-blue-600">Reistips</a>
+                <a href="contact.html" class="block hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="onzereizen-main">
+        <h2>Onze reizen</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="images/Bali.jpg" alt="Consulting">
+                <div class="service-info">
+                    <h3>Bali – Indonesië</h3>
+                    <p>Ontspan op tropische stranden en ontdek rijstterrassen en tempels.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="images/Parijs.jpg" alt="Consulting">
+                <div class="service-info">
+                    <h3>Parijs – Frankrijk</h3>
+                    <p>De stad van romantiek, kunst en wereldberoemde monumenten.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="images/New_York.jpg" alt="Consulting">
+                <div class="service-info">
+                    <h3>New York – USA</h3>
+                    <p>Een bruisende wereldstad vol cultuur, shopping en iconische plekken.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="images/Japan.jpg" alt="Consulting">
+                <div class="service-info">
+                    <h3>Japan</h3>
+                    <p>Traditie en technologie samen in een unieke reiservaring.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="images/Rome.jpg" alt="Rome">
+                <div class="service-info">
+                    <h3>Rome – Italië</h3>
+                    <p>Historische bezienswaardigheden en heerlijke Italiaanse keuken.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <img src="images/Afrikaanse_Safari.jpg" alt="Safari">
+                <div class="service-info">
+                    <h3>Afrikaanse Safari</h3>
+                    <p>Spot wilde dieren in hun natuurlijke habitat.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="activities-section">
+            <h2>Activiteiten</h2>
+            <div class="activities-grid">
+                <div class="activity-card order-1">
+                    <img src="images/Cruises.jpg" alt="">
+                    <span>Cruises</span>
+                </div>
+
+                <div class="activity-card order-2">
+                    <img src="images/Museum_Tour.jpg" alt="">
+                    <span>Museum Tour</span>
+                </div>
+
+                <div class="activity-card large">
+                    <img src="images/Beach_Tours.jpg" alt="">
+                    <span>Beach Tours</span>
+                </div>
+                
+                <div class="activity-card wide">
+                    <img src="images/City_Tours.jpg" alt="">
+                    <span>City Tours</span>
+                </div>
+                
+                <div class="activity-card">
+                    <img src="images/food.jpg" alt="">
+                    <span>Food</span>
+                </div>
+                
+                <div class="activity-card">
+                    <img src="images/Hiking.jpg" alt="">
+                    <span>Hiking</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-header">
+            <h2>Onze beste aanbiedingen</h2>
+        </div>
+        
+        <div class="cards-grid">
+        
+            <div class="card">
+                <img src="images/Melbourne.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Melbourne</h3>
+                        <span class="price">€700</span>
+                    </div>
+                    <p class="subtitle">An amazing journey</p>
+                    <a href="#" class="btn">Book a Hotel</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="images/Parijs.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Paris</h3>
+                        <span class="price">€600</span>
+                    </div>
+                    <p class="subtitle">A Paris Adventure</p>
+                    <a href="#" class="btn">Book a Hotel</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="images/London.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>London</h3>
+                        <span class="price">€350</span>
+                    </div>
+                    <p class="subtitle">London eye adventure</p>
+                    <a href="#" class="btn">Book a Hotel</a>
+                </div>
+            </div>
+        
+            <div class="card">
+                <img src="images/Columbia.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-header">
+                        <h3>Columbia</h3>
+                        <span class="price">€700</span>
+                    </div>
+                    <p class="subtitle">Amazing streets</p>
+                    <a href="#" class="btn">Book a Hotel</a>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Logo" >
+                <span class="brand-name">TravelXperience</span>
+            </div>
+            <nav class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="onzereizen.html">Onze reizen</a>
+                <a href="fotogallerij.html">Fotogallerij</a>
+                <a href="reistips.html">Reistips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-contact">
+                <div><i class="fas fa-map-marker-alt"></i> Gent, België</div>
+                <div><i class="fas fa-phone"></i> +32 493 88 13 23</div>
+                <div><i class="fas fa-envelope"></i> bahthiernomadjou20@gmail.com</div>
+                <div><i class="fas fa-clock"></i> Ma – Vr: 09:00 – 17:00</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 TravelXperience. All rights reserved.</span>
+        </div>
+    </footer>
+
+   <script src="js/nav.js"></script>
+</body>
+</html>

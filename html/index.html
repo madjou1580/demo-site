@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/opmaak.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/service-card.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js"></script>
+
+</head>
+<body>
+
+    <nav class="bg-white shadow-md fixed top-0 w-full z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+            <!-- Hamburger (mobile) -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Logo + Naam -->
+            <div class="flex items-center font-bold -ml-4">
+                <img src="images/logo.png" alt="Logo" class="h-16 w-auto">
+                <span class="hidden md:inline text-xl font-extrabold text-blue-700">
+                    Travel<span class="text-sky-400">X</span>perience
+                </span>
+            </div>
+    
+            <!-- Menu desktop -->
+            <div id="menu" class="hidden md:flex space-x-6 text-gray-800">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="onzereizen.html" class="hover:text-blue-600">Onze reizen</a>
+                <a href="fotogallerij.html" class="hover:text-blue-600">Fotogallerij</a>
+                <a href="reistips.html" class="hover:text-blue-600">Reistips</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    
+        <!-- Mobiel menu -->
+        <div id="mobile-menu" class="fixed top-0 left-0 h-full w-72 bg-white shadow-xl
+                    transform -translate-x-full transition-transform duration-300 ease-in-out
+                    md:hidden z-50">
+            <!-- Header -->
+            <div class="p-4 flex justify-end">
+                <button id="close-menu" class="text-3xl text-gray-600 hover:text-black transition">
+                    &times;
+                </button>
+            </div>
+    
+            <!-- Navigatie mobiel -->
+            <div class="px-6 py-4 space-y-4 text-lg font-medium text-gray-800">
+                <a href="index.html" class="block hover:text-blue-600">Home</a>
+                <a href="onzereizen.html" class="block hover:text-blue-600">Onze reizen</a>
+                <a href="fotogallerij.html" class="block hover:text-blue-600">Fotogallerij</a>
+                <a href="reistips.html" class="block hover:text-blue-600">Reistips</a>
+                <a href="contact.html" class="block hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="default-carousel" class="relative w-full mt-16" data-carousel="slide">
+        <!-- Carousel container -->
+        <div class="relative h-56 overflow-hidden md:h-96">
+
+            <!-- Slide 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="images/World.jpg" class="block w-full h-full object-cover" alt="Ontdek de wereld">
+                
+                <!-- Overlay voor donkere achtergrond -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Tekst -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-2">
+                        Ontdek de wereld
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-xl">
+                        Unieke reizen en onvergetelijke ervaringen
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="images/Adventure_ Nature.jpg" class="block w-full h-full object-cover" alt="Ontdek de wereld">
+                
+                <!-- Overlay voor donkere achtergrond -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Tekst -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-2">
+                        Avontuur & Natuur
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-xl">
+                        Beleef de mooiste bestemmingen
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="images/Travel_in_Comfort.jpg" class="block w-full h-full object-cover" alt="Ontdek de wereld">
+                
+                <!-- Overlay voor donkere achtergrond -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Tekst -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-2">
+                        Reis met Comfort
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-xl">
+                        Perfect georganiseerd voor jou
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="images/Discoveries.jpg" class="block w-full h-full object-cover" alt="Ontdek de wereld">
+                
+                <!-- Overlay voor donkere achtergrond -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Tekst -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-2">
+                        Culturele Ontdekkingen
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-xl">
+                        Leer nieuwe culturen kennen
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="images/Dream_Trip.jpg" class="block w-full h-full object-cover" alt="Ontdek de wereld">
+                
+                <!-- Overlay voor donkere achtergrond -->
+                <div class="absolute inset-0 bg-black/40"></div>
+                <!-- Tekst -->
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-2">
+                        Jouw Droomreis
+                    </h2>
+                    <p class="text-lg md:text-xl max-w-xl">
+                        Wij maken het mogelijk
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigatie bolletjes (slide indicators) -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-base" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+        
+        <!-- Vorige slide knop -->
+        <button type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/80 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m15 19-7-7 7-7" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+
+        <!-- Volgende slide knop -->
+        <button type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m9 5 7 7-7 7" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    
+    </header>
+
+    <main class="home-main">
+        <h2>Onze Diensten</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="images/Adventure_Travel.jpg" alt="Consulting">
+                <div class="service-info">
+                    <h3>Avontuurlijke Reizen</h3>
+                    <p>Ervaar spannende bestemmingen met outdoor-activiteiten zoals hiken, kajakken en safari’s wereldwijd.</p>
+                </div>
+                <button>Meer infos</button>
+            </div>
+
+            <div class="service-card">
+                <img src="images/luxury_resort.jpg" alt="Consulting">
+                <div class="service-info">
+                    <h3>Luxe Vakantie</h3>
+                    <p>Geniet van exclusieve resorts, privé-transfers en maatwerkervaringen voor een onvergetelijke vakantie.</p>
+                </div>
+                <button>Meer infos</button>
+            </div>
+
+            <div class="service-card">
+                <img src="images/Culturele_Tours.jpg" alt="Consulting">
+                <div class="service-info">
+                    <h3>Culturele Tours</h3>
+                    <p>Ontdek lokale tradities, historische steden en authentieke gerechten met deskundige gidsen.</p>
+                </div>
+                <button>Meer infos</button>
+            </div>
+
+            <div class="service-card">
+                <img src="images/family_adventure.jpg" alt="Consulting">
+                <div class="service-info">
+                    <h3>Gezinsvakanties</h3>
+                    <p>Plan een stressvrije vakantie met kindvriendelijke activiteiten, een avonturen voor het hele gezin.</p>
+                </div>
+                <button>Meer infos</button>
+            </div>     
+        </div>
+
+        <!-- Trip-sectie -->
+        <section class="trip-section">
+        
+            <div class="trip-images">
+                <img src="images/img1.jpg" class="img-large" alt="">
+                <div>
+                    <img src="images/img2.jpg" class="img-medium" alt="">
+                    <img src="images/img3.jpg" class="img-small" alt="">
+                </div>
+            </div>
+        
+            <div class="trip-content">
+                <h4 class="subtitle">Reizen we samen!</h4>
+                <h2 class="title">Plan je reis met ons</h2>
+        
+                <p class="text">
+                    Wij bieden unieke reiservaringen met de beste gidsen en accommodaties.
+                    Ontdek ongelooflijke bestemmingen en maak onvergetelijke herinneringen
+                    met onze professionele reisteams.
+                </p>
+        
+                <div class="feature">
+                    <div class="icon-circle">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div>
+                        <h3>Exclusieve Trips</h3>
+                        <p>Speciale reisvakken ontworpen voor jouw unieke ervaringen en interesses.</p>
+                    </div>
+                </div>
+        
+                <div class="feature">
+                    <div class="icon-circle">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <div>
+                        <h3>Professionele Gids</h3>
+                        <p>Erfaren gidsen die je alles zullen leren over elke bestemming.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="icon-circle">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <div>
+                        <h3>Professionele Gids</h3>
+                        <p>Erfaren gidsen die je alles zullen leren over elke bestemming.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-left">
+                    <h3>Blijf op de hoogte!</h3>
+                    <p>Schrijf je in voor onze nieuwsbrief en ontvang exclusieve aanbiedingen, reistips en inspiratie direct in je inbox.</p>
+                    <form class="newsletter-form" autocomplete="off">
+                        <input type="email" placeholder="Jouw e-mailadres" required>
+                        <button type="submit">Inschrijven <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="newsletter-right">
+                    <img src="images/safari_wildlife.jpg" alt="Nieuwsbrief" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Logo" >
+                <span class="brand-name">TravelXperience</span>
+            </div>
+            <nav class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="onzereizen.html">Onze reizen</a>
+                <a href="fotogallerij.html">Fotogallerij</a>
+                <a href="reistips.html">Reistips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-contact">
+                <div><i class="fas fa-map-marker-alt"></i> Gent, België</div>
+                <div><i class="fas fa-phone"></i> +32 493 88 13 23</div>
+                <div><i class="fas fa-envelope"></i> bahthiernomadjou20@gmail.com</div>
+                <div><i class="fas fa-clock"></i> Ma – Vr: 09:00 – 17:00</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 TravelXperience. All rights reserved.</span>
+        </div>
+    </footer>
+    
+    <script src="js/nav.js"></script>
+
+</body>
+</html>

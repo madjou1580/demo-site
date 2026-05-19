@@ -1,0 +1,78 @@
+/* ===== ALGEMENE LAYOUT VAN DE PAGINA ===== */
+/* Zorgt voor voldoende ruimte bovenaan (navbar) en onderaan */
+.reistips-main {
+    padding: 100px 5% 60px;
+}
+
+/* Titel van de reistips-pagina */
+.reistips-main h1 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1D242E;
+}
+
+/* ===== FLEX CONTAINER ===== */
+/* Container die alle reistips bevat en Flexbox gebruikt */
+.tips-container {
+    display: flex;              /* Activeert Flexbox */
+    flex-wrap: wrap;            /* Items mogen naar de volgende rij springen */
+    gap: 20px;                  /* Ruimte tussen de flex-items */
+    justify-content: center;    /* Centreert de tips horizontaal */
+}
+
+/* ===== FLEX ITEMS ===== */
+/* Stijl voor elke afzonderlijke reistip */
+.tip {
+    flex: 1 1 250px;             /* Flex-grow, flex-shrink, basisbreedte */
+    max-width: 300px;            /* Maximale breedte per kaart */
+    padding: 25px;               /* Binnenruimte rond de inhoud */
+    border-radius: 12px;         /* Afgeronde hoeken */
+    color: white;                /* Witte tekst voor contrast */
+}
+
+/* Titel binnen elke reistip */
+.tip h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Font Awesome icoon in de titel */
+.tip h2 i {
+    margin-right: 8px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* Beschrijvende tekst van de reistip */
+.tip p {
+    font-size: 15px;
+    line-height: 1.5;            /* Regelafstand voor betere leesbaarheid */
+}
+
+/* ===== ACHTERGRONDKLEUREN PER TIP ===== */
+/* Elke tip krijgt een eigen kleur (zoals de blokjes uit de les) */
+
+.tip1 {
+    background-color: #4f46e5;   /* Blauw */
+}
+
+.tip2 {
+    background-color: #16a34a;   /* Groen */
+}
+
+.tip3 {
+    background-color: #f97316;   /* Oranje */
+}
+
+.tip4 {
+    background-color: #dc2626;   /* Rood */
+}
+
+.tip5 {
+    background-color: #0ea5e9;   /* Lichtblauw */
+}
+
+.tip6 {
+    background-color: #9333ea;   /* Paars */
+}

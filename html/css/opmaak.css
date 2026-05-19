@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    padding: 40px 5%;
+}
+
+main h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1D242E;
+}
+
+/* === MOBILE === */
+@media only screen and (max-width: 400px) {
+    main h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+}

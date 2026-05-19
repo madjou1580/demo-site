@@ -1,0 +1,352 @@
+/* ================
+    TRIP SECTION
+================= */
+.trip-section {
+    display: flex; /* Flexbox voor horizontale layout */
+    justify-content: center; /* Centreer horizontaal */
+    align-items: center; /* Centreer verticaal */
+    gap: 50px; /* Ruimte tussen images en content */
+    padding: 5% 0%;     
+}
+
+.trip-images {
+    display: grid; /* Grid layout voor afbeeldingen */
+    grid-template-columns: 1.2fr 1fr; /* Twee kolommen, grote afbeelding = 1.2, kleine = 1 */
+    gap: 20px; /* Ruimte tussen afbeeldingen */
+    width: 100%;
+    max-width: 500px;
+}
+
+.trip-images img {
+    width: 100%; /* Vul container volledig */
+    object-fit: cover; /* Zorg dat afbeelding niet vervormt */
+    display: block;  /* Verwijdert inline spacing issues */
+}
+
+.img-large {
+    border-radius: 100px 20px 20px 100px;
+}
+
+/* Kolom voor medium + kleine afbeeldingen */
+.trip-images > div {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Twee rijen voor medium en small images */
+    gap: 20px;
+}
+
+/* Medium afbeelding */
+.img-medium {
+    /* Asymmetrische afgeronde hoeken */
+    /* Syntax: border-radius: horizontaal / verticaal */
+    /* Horizontale afrondingen (linksboven, rechtsboven, rechtsonder, linksonder) */
+    /* Verticale afrondingen (linksboven, rechtsboven, rechtsonder, linksonder) */
+    border-radius: 50% 50% 20% 80% / 60% 40% 60% 40%;
+    /* Dit geeft een creatieve, asymmetrische vorm in plaats van een standaard cirkel of vierkant */
+}
+
+.img-small {
+    border-radius: 70% 30% 50% 50% / 40% 60% 30% 70%;
+}
+
+/* =====  CENTRALE CONTENT ====== */
+.trip-content {
+    width: 50%;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #354DF0;
+    margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.2px; /* Ruimte tussen letters */
+    text-transform: uppercase; /* Hoofdletters */
+    position: relative; /* Voor de onderstreping */
+    padding-bottom: 10px;
+}
+
+/* onderstreping onder de subtitle */
+.subtitle::after {
+    content: ""; /* pseudo-element, hier gebruiken we een lege inhoud om de onderstreping te maken */
+    position: absolute; /* absolute positionering binnen de parent (.subtitle) */
+    bottom: 0; /* zet het element helemaal onderaan de parent */
+    left: 0; /* zet het element aan de linkerkant van de parent */
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #354DF0, #3a49aa);
+    border-radius: 2px;
+}
+
+.title {
+    font-size: 30px;
+    color: #0f2c3f;
+    margin-bottom: 10px;
+}
+
+.text {
+    color: #666;
+    line-height: 1.6; /* Betere leesbaarheid */
+    margin-bottom: 30px;
+}
+
+/* ====== FEATURES ======*/
+.feature {
+    display: flex; /* Flexbox voor icon + tekst */
+    align-items: flex-start; /* Uitlijnen aan bovenkant */
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    background-color: #e7f7ff;
+    color: #354DF0;
+    border-radius: 50%;
+    display: flex; /* Flexbox voor centreren van icon */
+    align-items: center; /* Verticaal centreren */
+    justify-content: center; /* Horizontaal centreren */
+    font-size: 20px;
+    flex-shrink: 0; /* Voorkomt dat de cirkel krimpt */
+}
+
+/* .icon-circle i {
+    font-size: 22px;
+} */
+
+.feature h3 {
+    font-size: 18px;
+    color: #0f2c3f;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* ================
+    NEWSLETTER
+================= */
+.newsletter-section {
+    background: linear-gradient(90deg, #e0f7fa 0%, #b2ebf2 100%);
+    padding: 48px 0 36px 0; /* Ruimte boven en onder */
+    display: flex; /* Flexbox voor centreren */
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    box-shadow: 0 4px 32px rgba(11,92,129,0.07);
+}
+
+.newsletter-content {
+    display: flex; /* Flexbox voor layout */
+    align-items: center; /* Verticaal centreren */
+    justify-content: space-between; /* Ruimte tussen links en rechts */
+    max-width: 950px;
+    width: 90%;
+    gap: 48px;
+}
+
+.newsletter-left {
+    flex: 1 1 0; /* Flexibele breedte */
+    min-width: 260px;
+}
+
+.newsletter-left h3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 2rem;
+    color: #0b5c81;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.newsletter-left p {
+    color: #1976d2;
+    font-size: 1.08rem;
+    margin-bottom: 22px;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 2px 12px rgba(11,92,129,0.07);
+    overflow: hidden;
+    max-width: 420px;
+}
+
+.newsletter-form input[type="email"] {
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    font-size: 1rem;
+    flex: 1; /* Vul beschikbare ruimte */
+    border-radius: 40px 0 0 40px;
+    background: transparent;
+    color: #0b5c81;
+}
+
+.newsletter-form input::placeholder {
+    color: #90caf9;
+    opacity: 1;
+}
+
+.newsletter-form button {
+    border: none;
+    background: linear-gradient(90deg, #00b8ff 0%, #0b5c81 100%);
+    color: #fff;
+    font-size: 1rem;
+    padding: 0 28px;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.newsletter-form button:hover {
+    background: linear-gradient(90deg, #0b5c81 0%, #00b8ff 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+.newsletter-right {
+    flex: 1 1 0; /* Flexibele breedte */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 220px;
+}
+
+.newsletter-right img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(11,92,129,0.13);
+    object-fit: cover;
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+
+@media (max-width: 1024px) {
+
+    /* ===== TRIP SECTION ===== */
+    .trip-section {
+        gap: 40px;
+        padding: 60px 5%;
+    }
+
+    .trip-content {
+        width: 100%;
+    }
+
+    .trip-images {
+        max-width: 100%;
+    }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter-content {
+        gap: 32px;
+    }
+
+    .newsletter-right img {
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ===== TRIP SECTION ===== */
+    .trip-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 5%;
+        text-align: center;
+    }
+
+    .trip-content {
+        width: 100%;
+    }
+
+    .subtitle::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .feature {
+        align-items: center;
+        text-align: left;
+    }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        margin: 0 auto;
+    }
+
+    .newsletter-right {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* ===== TRIP SECTION ===== */
+    .trip-section {
+        gap: 5px;
+    }
+
+    .trip-images {
+        grid-template-columns: 1fr; /* Eén kolom */    
+    }
+
+    .trip-images > div {
+        grid-template-columns: 1fr 1fr; /* Twee images onder elkaar horizontaal */
+        gap: 15px;
+    }
+
+    .trip-images img {
+        border-radius: 12px;
+    }
+
+    .title { font-size: 24px; }
+
+    .text { font-size: 14px; }
+
+    .feature h3 { font-size: 16px; }
+
+    .feature p { font-size: 13px; }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter-left h3 {
+        font-size: 1.6rem;
+    }
+
+    .newsletter-left p {
+        font-size: 0.95rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .newsletter-form input {
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+    }
+
+    .newsletter-form button {
+        border-radius: 0 0 20px 20px;
+        justify-content: center;
+        padding: 14px;
+    }
+}

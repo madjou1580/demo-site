@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/opmaak.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.5.2/flowbite.min.js"></script>
+</head>
+<body>
+
+    <nav class="bg-white shadow-md fixed top-0 w-full z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+            <!-- Hamburger (mobile) -->
+            <button id="menu-btn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Logo + Naam -->
+            <div class="flex items-center font-bold -ml-4">
+                <img src="images/logo.png" alt="Logo" class="h-16 w-auto">
+                <span class="hidden md:inline text-xl font-extrabold text-blue-700">
+                    Travel<span class="text-sky-400">X</span>perience
+                </span>
+            </div>
+    
+            <!-- Menu desktop -->
+            <div id="menu" class="hidden md:flex space-x-6 text-gray-800">
+                <a href="index.html" class="hover:text-blue-600">Home</a>
+                <a href="onzereizen.html" class="hover:text-blue-600">Onze reizen</a>
+                <a href="fotogallerij.html" class="hover:text-blue-600">Fotogallerij</a>
+                <a href="reistips.html" class="hover:text-blue-600">Reistips</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    
+        <!-- Mobiel menu -->
+        <div id="mobile-menu" class="fixed top-0 left-0 h-full w-72 bg-white shadow-xl
+                    transform -translate-x-full transition-transform duration-300 ease-in-out
+                    md:hidden z-50">
+            <!-- Header -->
+            <div class="p-4 flex justify-end">
+                <button id="close-menu" class="text-3xl text-gray-600 hover:text-black transition">
+                    &times;
+                </button>
+            </div>
+    
+            <!-- Navigatie mobiel -->
+            <div class="px-6 py-4 space-y-4 text-lg font-medium text-gray-800">
+                <a href="index.html" class="block hover:text-blue-600">Home</a>
+                <a href="onzereizen.html" class="block hover:text-blue-600">Onze reizen</a>
+                <a href="fotogallerij.html" class="block hover:text-blue-600">Fotogallerij</a>
+                <a href="reistips.html" class="block hover:text-blue-600">Reistips</a>
+                <a href="contact.html" class="block hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-main">
+    
+        <section class="contact-wrapper">
+    
+            <!-- LEFT INFO -->
+            <div class="contact-info">
+                <h2>Neem contact met ons op</h2>
+                <p>
+                    Heb je een vraag over onze reizen of wil je een offerte op maat?
+                    Ons team helpt je graag verder.
+                </p>
+    
+                <ul class="contact-details">
+                    <li>
+                        <i class="fas fa-location-dot"></i>
+                        <span>Gent, België</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+32 493 88 13 23</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>bahthiernomadjou20@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Ma – Vr: 09:00 – 17:00</span>
+                    </li>
+                </ul>
+    
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+    
+            <!-- RIGHT FORM -->
+            <div class="contact-form">
+                <h3>Stuur ons een bericht</h3>
+    
+                <form>
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Naam" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="E-mailadres" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <i class="fas fa-tag"></i>
+                        <input type="text" placeholder="Onderwerp">
+                    </div>
+    
+                    <div class="input-group textarea">
+                        <i class="fas fa-comment"></i>
+                        <textarea placeholder="Jouw bericht"></textarea>
+                    </div>
+    
+                    <button type="submit">
+                        Verzenden <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+    
+        </section>
+    
+    </main>
+
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="Logo" >
+                <span class="brand-name">TravelXperience</span>
+            </div>
+            <nav class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="onzereizen.html">Onze reizen</a>
+                <a href="fotogallerij.html">Fotogallerij</a>
+                <a href="reistips.html">Reistips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-contact">
+                <div><i class="fas fa-map-marker-alt"></i> Gent, België</div>
+                <div><i class="fas fa-phone"></i> +32 493 88 13 23</div>
+                <div><i class="fas fa-envelope"></i> bahthiernomadjou20@gmail.com</div>
+                <div><i class="fas fa-clock"></i> Ma – Vr: 09:00 – 17:00</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 TravelXperience. All rights reserved.</span>
+        </div>
+    </footer>
+
+   <script src="js/nav.js"></script>
+</body>
+</html>
